@@ -1,6 +1,4 @@
 
-import java.util.*;
-
 public class LinearSearch {
     public static int seacrhElement(int a[], int key) {
         int idx = -1;

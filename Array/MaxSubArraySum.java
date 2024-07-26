@@ -62,7 +62,7 @@ public class MaxSubArraySum {
     }
 
     public static void main(String[] args) {
-        int a[] = { 1, -2, 6, -1, 3 };
+        // int a[] = { 1, -2, 6, -1, 3 };
         int b[] = { 4, 6, 3, 7 };
         // int ans = findMaxSumSubArr(a);
         // int ans=prefixArr(a);

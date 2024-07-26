@@ -29,6 +29,6 @@ public class ArrayBasics {
             System.out.print(a[i] + " ");
         }
         System.out.println("\n" + ans);
-
+        sc.close();
     }
 }

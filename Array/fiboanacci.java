@@ -17,7 +17,7 @@ public class fiboanacci {
 
     public static void main(String[] args) {
         int n = 5;
-        printFibSeries(10);
+        printFibSeries(n);
 
     }
 

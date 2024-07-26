@@ -17,5 +17,6 @@ public class LeftTriangleStar {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
