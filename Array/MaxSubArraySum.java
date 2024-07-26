@@ -1,4 +1,3 @@
-package Array;
 
 public class MaxSubArraySum {
     // Bruteforce approach
@@ -46,22 +45,20 @@ public class MaxSubArraySum {
     public static int kadanesubarrSum(int a[]) {
         int maxSum = Integer.MIN_VALUE;
         int currentSum = 0;
-        
-        for (int i = 0; i < nums.length; i++) {
-            currentSum += nums[i];
-            
+
+        for (int i = 0; i < a.length; i++) {
+            currentSum += a[i];
+
             if (currentSum > maxSum) {
                 maxSum = currentSum;
             }
-            
+
             if (currentSum < 0) {
                 currentSum = 0;
             }
-        }`
-        
-        return maxSum;
-    }
+        }
 
+        return maxSum;
     }
 
     public static void main(String[] args) {
