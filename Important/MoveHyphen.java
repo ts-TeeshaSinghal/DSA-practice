@@ -9,22 +9,31 @@ public class MoveHyphen {
             return null;
         }
 
-        StringBuilder hyphens = new StringBuilder();
-        StringBuilder alaphabet = new StringBuilder();
-
+        String res = "";
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '-') {
-                hyphens.append(s.charAt(i));
+                res = s.charAt(i) + res;
             } else {
-                alaphabet.append(s.charAt(i));
+                res = res + s.charAt(i);
             }
         }
-        return hyphens.append(alaphabet).toString();
 
+        // StringBuilder hyphens = new StringBuilder();
+        // StringBuilder alaphabet = new StringBuilder();
+
+        // for (int i = 0; i < s.length(); i++) {
+        // if (s.charAt(i) == '-') {
+        // hyphens.append(s.charAt(i));
+        // } else {
+        // alaphabet.append(s.charAt(i));
+        // }
+        // }
+        // return hyphens.append(alaphabet).toString();
+        return res;
     }
 
     public static void main(String[] args) {
-        String s = "Hello-world";
+        String s = "Hello-world-Hii";
         System.out.println(moveToFirstHyphen(s));
     }
 }
